@@ -1,0 +1,27 @@
+.parallax {
+    margin-top: 75px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/img/parallax.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 1024px) {
+    .parallax {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        height: 300px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .parallax {
+        margin-top: 41px;
+    }
+}

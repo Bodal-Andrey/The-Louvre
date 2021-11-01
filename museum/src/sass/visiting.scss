@@ -1,0 +1,219 @@
+.visiting {
+    padding-top: 27px;
+}
+
+.visiting-title {
+    position: relative;
+}
+
+.visiting-title::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #710707;
+}
+
+.visiting-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 101px;
+    margin-right: -60px;
+    padding: 0;
+}
+
+.visiting-list__item {
+    width: 440px;
+    margin-right: 60px;
+    margin-bottom: 75px;
+}
+
+.visiting-link {
+    display: block;
+}
+
+.visiting-link img {
+    width: 440px;
+    height: 285px;
+}
+
+.visiting-link__title {
+    position: relative;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    font-family: "Forum", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.visiting-link__title:hover {
+    cursor: pointer;
+    color: #9d8665;
+}
+
+.visiting-link__title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 140px;
+    height: 3px;
+    background-color: #710707;
+}
+
+.visiting-link:hover .visiting-link__title::after {
+    right: 0;
+    transition: 1s ease-out;
+}
+
+.first-par {
+    margin: 0;
+    font-weight: 200;
+    line-height: 26px;
+    text-align: left;
+    color: #000;
+}
+
+.second-par {
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #000;;
+}
+
+.first-par:hover,
+.second-par:hover {
+    cursor: pointer;
+    color: #9d8665;
+}
+
+@media (max-width: 1024px) {
+    .visiting {
+        padding-top: 61px;
+    }
+
+    .visiting-title::after {
+        bottom: -24px;
+    }
+
+    .visiting-list__item {
+        width: 330px;
+    }
+
+    .visiting-link img {
+        width: 330px;
+        height: 215px;
+    }
+
+    .visiting-list {
+        margin-top: 84px;
+        margin-right: 0;
+    }
+
+    .visiting-list__item {
+        margin-right: 0;
+        margin-left: 108px;
+        margin-bottom: 58px;
+    }
+
+    .visiting-link__title {
+        margin-bottom: 14px;
+        font-size: 28px;
+    }
+
+    .visiting-link__title::after {
+        bottom: -7px;
+        right: 179px;
+    }
+
+    .first-par {
+        font-size: 20px;
+    }
+    
+    .second-par {
+        font-size: 16px;
+    }
+
+    .visiting-link__title--colonnade,
+    .visiting-link__title--mona,
+    .visiting-link__title--palace {
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .visiting {
+        margin-bottom: 43px;
+        padding-top: 39px;
+    }
+
+    .visiting-list {
+        margin-top: 64px;
+    }
+
+    .visiting-list__item {
+        width: 280px;
+        margin-left: 56px;
+        margin-bottom: 38px;
+    }
+
+    .visiting-link img {
+        width: 280px;
+        height: 180px;
+    }
+
+    .visiting-link__title {
+        margin-bottom:22px;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 3px;
+    }
+
+    .visiting-link__title::after {
+        bottom: -11px;
+        right: 130px;
+    }
+
+    .first-par {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0;
+    }
+
+    .second-par {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 420px) {
+    .visiting {
+        margin-bottom: -2px;
+    }
+    
+    .visiting-list__item {
+        margin-left: 50px;
+        margin-bottom: 39px;
+    }
+
+    .visiting-link__title {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 5px
+    }
+
+    .first-par {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

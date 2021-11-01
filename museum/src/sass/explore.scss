@@ -1,0 +1,274 @@
+.explore {
+    min-height: 865px;
+    margin-top: 0;
+    padding-top: 77px;
+    background-color: #030303;
+}
+
+.explore-wrapper {
+    display: flex;
+}
+
+.explore-text__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+}
+
+.explore-title {
+    position: relative;
+    margin-bottom: 103px;
+    color: #fff;
+}
+
+.explore-title::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 65px;
+    height: 3px;
+    background-color: #710707;
+}
+
+.explore-text__paragraph {
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 39px;
+    color: #fff;
+}
+
+.explore-text__paragraph span {
+    color: #CAAA7D;
+}
+
+
+.explore-img__wrapper {
+    position: relative;
+    width: 720px;
+    height: 700px;
+}
+
+.explore-img__content {
+    position: absolute;
+    top: 13px;
+    width: 100%;
+    height: 100%;
+}
+
+.explore-img__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-after,
+.img-before {
+    height: 100%;
+    background-size: cover;
+}
+
+.img-before {
+    position: absolute;
+    width: 61%;
+    background-image: url("../assets/img/before.jpg");
+}
+
+.img-after {
+    width: 100%;
+    background-image: url("../assets/img/after.jpg");
+}
+
+.explore-slider__container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.explore-slider__container input {
+    width: 100%;
+	background: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+.explore-slider__container input::-webkit-slider-thumb {
+	width: 5px;
+	height: 700px;
+	background: none;
+	cursor: col-resize;
+	-webkit-appearance: none;
+}
+
+.slider-toggle {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 61%;
+    width: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-ms-flex-align: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	pointer-events: none;
+}
+
+.slider-toggle__line {
+    -webkit-box-flex: 1;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	width: 100%;
+	background-color: #fff;
+}
+
+.slider-toggle__circle {
+    -webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	width: 40px;
+	height: 40px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .explore {
+        padding-top: 60px;
+        min-height: 1149px;
+    }
+
+    .explore-wrapper {
+        flex-direction: column;
+    }
+
+    .explore-text__wrapper {
+        width: 100%;
+    }
+
+    .explore-title {
+        margin-bottom: 81px;
+    }
+
+    .explore-title::after {
+        bottom: -22px;
+        right: 0;
+    }
+
+    .explore-text__paragraph {
+        margin-bottom: -2px;
+        font-size: 20px;
+    }
+
+    .explore-text__paragraph br {
+        display: none;
+    }
+
+    .explore-text__paragraph--three {
+        display: none;
+    }
+
+    .explore-picture {
+        margin-top: 58px;
+        margin-left: 131px;
+    }
+
+    .explore-img__content {
+        top: 60px;
+        left: 132px;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore {
+        min-height: 908px;
+        padding-top: 40px;
+    }
+
+    .explore-title {
+        margin-bottom: 5px;
+    }
+
+    .explore-text__paragraph {
+        display: none;
+    }
+
+    .explore-picture {
+        width: 728px;
+        height: 705px;
+        margin-left: 0;
+    }
+
+    .explore-img__wrapper {
+        width: 728px;
+        height: 705px;
+    }
+
+    .explore-img__content {
+        top: 58px;
+        left: 0;
+    }
+
+    .slider-toggle__line {
+        height: 23px;
+    }
+
+    .slider-toggle {
+        left: 60%;
+    }
+
+    .slider-toggle__line--top {
+        height: 344px;
+    }
+
+    .slider-toggle__line--bottom {
+        height: 321px;
+    }
+}
+
+@media (max-width: 420px) {
+    .explore {
+        min-height: 551px;
+        padding-top: 43px;
+    }
+    
+    .explore-picture {
+        width: 380px;
+        height: 368px;
+    }
+
+    .explore-img__wrapper {
+        width: 380px;
+        height: 368px;
+    }
+
+    .explore-img__content {
+        top: 57px;
+    }
+
+    .slider-toggle {
+        width: 3px;
+    }
+
+    .slider-toggle__line--top {
+        height: 180px;
+    }
+
+    .slider-toggle__line--bottom {
+        height: 168px;
+    }
+
+    .slider-toggle__circle {
+        width: 20px;
+        height: 20px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+}
