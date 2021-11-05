@@ -10,7 +10,6 @@ function openNav() {
     closeNavPopup.classList.remove('none');
     closeNavPopup.classList.add('block');
     nav.classList.remove('nav-list');
-    // nav.classList.add('nav-list__popup');
     navWrapper.classList.add('popup');
 
     setTimeout(() => {
@@ -33,7 +32,6 @@ function closeNav() {
 
 
     setTimeout(() => {
-        // nav.classList.remove('nav-list__popup');
         nav.classList.add('nav-list');
         navWrapper.classList.remove('popup');
     }, 1000);
