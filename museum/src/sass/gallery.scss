@@ -37,6 +37,20 @@
     margin-bottom: 24px;
 }
 
+.gallery-img {
+    opacity: 0.3;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-transform: translateY(60%) scale(0.3);
+    transform: translateY(60%) scale(0.3);
+}
+
+.gallery-img.active {
+    opacity: 1;
+    -webkit-transform: translateY(0%) scale(1);
+    transform: translateY(0%) scale(1);
+}
+
 .gallery-container__inner img:nth-child(1) {
     margin-top: 49px;
 }

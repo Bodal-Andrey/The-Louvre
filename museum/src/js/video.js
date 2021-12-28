@@ -35,7 +35,6 @@ function togglePlay() {
     video[method]();
     videoPaused();
     updateButton();
-    console.log('fufufu')
 };
 
 function videoButtons() {
