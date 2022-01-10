@@ -1,5 +1,5 @@
 body {
-    min-width: 1920px;
+    min-width: 1480px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -80,9 +80,9 @@ html {
 
 @media (max-width: 1024px) {
     body {
-    min-width: 1024px;
+        min-width: 1024px;
     }
-    
+
     .container {
         max-width: 984px;
     }
@@ -95,9 +95,9 @@ html {
 
 @media (max-width: 768px) {
     body {
-    min-width: 768px;
+        min-width: 768px;
     }
-    
+
     .container {
         max-width: 728px;
     }
@@ -111,12 +111,12 @@ html {
 @media (max-width: 420px) {
     body {
         min-width: 420px;
-        }
-        
+    }
+
     .container {
         max-width: 380px;
     }
-    
+
     .section-title {
         font-size: 28px;
         line-height: 40px;

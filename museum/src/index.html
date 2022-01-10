@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css">
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
@@ -802,6 +802,198 @@
             </div>
         </div>
     </footer>
+    <div class="modal-booking toggle">
+        <div class="booking">
+            <button class="close-book" type="button"></button>
+            <div class="container">
+                <form>
+                    <div class="form-container">
+                        <div class="general-info">
+                            <div class="logo"></div>
+                            <h3 class="underline-title">Booking tickets</h3>
+                            <div class="datetime">
+                                <div class="form-group select-date">
+                                    <span class="icon arrow"></span>
+                                    <span class="icon date"></span>
+                                    <label>Date</label>
+                                    <input type="date" name="date" />
+                                </div>
+                                <div class="form-group custom-select select-time">
+                                    <select class="none">
+                                        <option>Time</option>
+                                        <option>09 : 00</option>
+                                        <option>09 : 30</option>
+                                        <option>10 : 00</option>
+                                        <option>10 : 30</option>
+                                        <option>11 : 00</option>
+                                        <option>11 : 30</option>
+                                        <option>12 : 00</option>
+                                        <option>12 : 30</option>
+                                        <option>13 : 00</option>
+                                        <option>13 : 30</option>
+                                        <option>14 : 00</option>
+                                        <option>14 : 30</option>
+                                        <option>15 : 00</option>
+                                        <option>15 : 30</option>
+                                        <option>16 : 00</option>
+                                        <option>16 : 30</option>
+                                        <option>17 : 00</option>
+                                        <option>17 : 30</option>
+                                        <option>18 : 00</option>
+                                    </select>
+                                    <div class="select">
+                                        <div class="select-selected">
+                                            <span class="icon time"></span>
+                                            <span class="select-value">Time</span>
+                                            <span class="icon arrow"></span>
+                                        </div>
+                                        <div class="select-items">
+                                            <span class="option active" data-id="0">9 : 00</span>
+                                            <span class="option" data-id="1">9 : 30</span>
+                                            <span class="option" data-id="2">10 : 00</span>
+                                            <span class="option" data-id="3">10 : 30</span>
+                                            <span class="option" data-id="4">11 : 00</span>
+                                            <span class="option" data-id="5">11 : 30</span>
+                                            <span class="option" data-id="6">12 : 00</span>
+                                            <span class="option" data-id="7">12 : 30</span>
+                                            <span class="option" data-id="8">13 : 00</span>
+                                            <span class="option" data-id="9">13 : 30</span>
+                                            <span class="option" data-id="10">14 : 00</span>
+                                            <span class="option" data-id="11">14 : 30</span>
+                                            <span class="option" data-id="12">15 : 00</span>
+                                            <span class="option" data-id="13">15 : 30</span>
+                                            <span class="option" data-id="14">16 : 00</span>
+                                            <span class="option" data-id="15">16 : 30</span>
+                                            <span class="option" data-id="16">17 : 00</span>
+                                            <span class="option" data-id="17">17 : 30</span>
+                                            <span class="option" data-id="18">18 : 00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="icon name"></span>
+                                <input type="text" placeholder="Name" name="name" />
+                            </div>
+                            <div class="form-group">
+                                <span class="icon email"></span>
+                                <input type="email" placeholder="E-mail" name="email" />
+                            </div>
+                            <div class="form-group">
+                                <span class="icon phone"></span>
+                                <input type="tel" placeholder="Phone" name="phone" />
+                            </div>
+                            <div class="form-group custom-select select-ticket">
+                                <select name="ticket-type" class="none">
+                                    <option>Ticket Type</option>
+                                    <option>Permanent exhibition</option>
+                                    <option>Temporary exhibition</option>
+                                    <option>Combined Admission</option>
+                                </select>
+                                <div class="select">
+                                    <div class="select-selected">
+                                        <span class="icon ticket"></span>
+                                        <span class="select-value">Ticked Type</span>
+                                        <span class="icon arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-ticket">
+                                <p class="underline-title">Entry Ticket</p>
+                                <div class="ticket-type">
+                                    <label>Basic 18+ (<span class="ticket-price-basic">20</span>
+                                        €)</label>
+                                    <div class="counts">
+                                        <button class="decrease" type="button"></button>
+                                        <input type="number" value="0" min="0" max="20" name="basic" readonly />
+                                        <button class="increase" type="button"></button>
+                                    </div>
+                                </div>
+                                <div class="ticket-type">
+                                    <label>Senior 65+ (<span class="ticket-price-senior">10</span>
+                                        €)</label>
+                                    <div class="counts">
+                                        <button class="decrease" type="button"></button>
+                                        <input type="number" value="0" min="0" max="20" name="senior" readonly />
+                                        <button class="increase" type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment">
+                            <p class="title">Overview</p>
+                            <p class="subtitle">Tour to Louvre</p>
+                            <ul>
+                                <li class="date">Friday, August 19</li>
+                                <li class="time">16 : 30</li>
+                                <li class="ticket">Temporary exhibition</li>
+                            </ul>
+                            <div class="basic-ticket">
+                                <div>
+                                    <span class="number ticket-number-basic">0</span>Basic
+                                    (<span class="ticket-price-basic">20</span>
+                                    €)
+                                </div>
+                                <div class="total-price-basic">0 €</div>
+                            </div>
+                            <div class="senior-ticket">
+                                <div>
+                                    <span class="number ticket-number-senior">0</span>Senior
+                                    (<span class="ticket-price-senior">10</span>
+                                    €)
+                                </div>
+                                <div class="total-price-senior">0 €</div>
+                            </div>
+                            <div class="total-ticket">
+                                <span>Total:</span>
+                                <span class="sum">0 €</span>
+                            </div>
+                            <div class="card">
+                                <div class="card-container">
+                                    <div class="front-side">
+                                        <div class="form-group">
+                                            <label for="card-number">Card number</label>
+                                            <input type="text" name="card-number" id="card-number" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Expiration date</label>
+                                            <div class="card-date">
+                                                <div class="input-wr">
+                                                    <input type="number" name="card-months" value="03" min="1"
+                                                        max="12" />
+                                                    <button class="decrease" type="button"></button>
+                                                    <button class="increase" type="button"></button>
+                                                </div>
+                                                <div class="input-wr">
+                                                    <input type="number" name="card-year" value="2024" min="0" />
+                                                    <button class="decrease" type="button"></button>
+                                                    <button class="increase" type="button"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group w100">
+                                            <label for="card-holder-name">Cardholder name</label>
+                                            <input type="text" name="card-holder-name" id="card-holder-name" />
+                                        </div>
+                                    </div>
+                                    <div class="back-side">
+                                        <div class="form-group">
+                                            <label for="cvc-cvv">CVC/CVV</label>
+                                            <input type="number" id="cvc-cvv" name="cvc-cvv" />
+                                            <p>
+                                                The last <br />3 or 4 digits on back <br />of the card
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-submit ripple" type="submit">Book</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

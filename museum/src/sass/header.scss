@@ -56,6 +56,10 @@
     color: #fff;
 }
 
+.nav-list__item:last-child a {
+    margin-right: 0;
+}
+
 .nav-list__item a:hover {
     cursor: pointer;
     color: #9d8665;
