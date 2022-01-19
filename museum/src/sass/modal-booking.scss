@@ -46,11 +46,13 @@
 
 .booking .close-book {
     position: absolute;
-    width: 31px;
-    height: 31px;
-    top: 87px;
+    width: 28px;
+    height: 28px;
+    top: 128px;
     right: 30px;
     background-image: url(../assets/svg/close.svg);
+    background-color: #fff;
+    border: 0;
 }
 
 .booking .container {
@@ -80,6 +82,7 @@
 }
 
 .general-info h3 {
+    position: relative;
     font-family: "Forum", sans-serif;
     color: #9d8665;
     font-weight: 400;
@@ -88,17 +91,24 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     word-spacing: -5.5px;
+    margin-top: 0;
     margin-bottom: 106px;
 }
 
 .general-info h3::after {
-    bottom: -47px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -46px;
+    height: 3px;
+    width: 400px;
+    background-color: #710707;
 }
 
 .general-info h3::before {
     content: "Tour to Louvre";
     position: absolute;
-    top: 247px;
+    top: 69px;
     font-family: Roboto;
     font-size: 18px;
     line-height: 21px;
@@ -118,7 +128,7 @@
 }
 
 .general-info .form-group {
-    width: 398px;
+    width: 400px;
     position: relative;
     border: 2px solid #030303;
     display: -webkit-box;
@@ -231,12 +241,12 @@
 
 .form-group label {
     font-size: 18px;
-  }
+}
 
 .select-selected {
     display: flex;
     justify-content: space-between;
-}  
+}
 
 .select-time .select-selected {
     width: 190px;
@@ -248,11 +258,17 @@
 
 .select-ticket .select-selected .select-value {
     flex-grow: 1;
-    padding-top: 5px;
+    padding-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
 }
 
 .select-time .select-selected .select-value {
-    padding-top: 5px;
+    margin-left: -61px;
+    padding-top: 11px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .select .select-items {
@@ -269,7 +285,12 @@
     right: -2px;
     height: 200px;
     overflow-y: auto;
-    border:  2px solid #000;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.select-ticket .select-items {
+    height: auto;
 }
 
 .select-items .option {
@@ -279,4 +300,305 @@
 
 .select-items .option .active {
     background-color: #e7e7e7;
+}
+
+.entry-ticket {
+    padding-top: 8px;
+    padding-left: 13px;
+    border: 2px solid #000;
+}
+
+.entry-ticket p {
+    position: relative;
+    font-family: "Forum";
+    font-size: 18px;
+    line-height: 20px;
+    color: #9d8665;
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.entry-ticket p::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 368px;
+    height: 3px;
+    background-color: #710707;
+}
+
+.entry-ticket .ticket-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-type--basic {
+    margin-bottom: 18px;
+}
+
+.ticket-type--senior {
+    margin-bottom: 9px;
+}
+
+.entry-ticket .ticket-type label {
+    font-size: 18px;
+}
+
+.entry-ticket .ticket-type .counts {
+    display: flex;
+    width: 105px;
+    height: 25px;
+    margin-right: 13px;
+    border: 1px solid #030303;
+}
+
+.ticket-type .counts .decrease {
+    background-image: url("../assets/svg/minus-white.svg");
+    background-color: #030303;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ticket-type .counts .increase {
+    background-image: url("../assets/svg/plus-white.svg");
+    background-color: #030303;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form-container .payment {
+    width: 530px;
+    padding: 25px 30px;
+    border: 1px solid #000;
+    background-image: url("../assets/img/popup-image.jpg");
+    background-position: 92% 23px;
+    background-repeat: no-repeat;
+}
+
+.form-container .payment .title {
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.form-container .payment .subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    color: #740c11;
+}
+
+.form-container .payment ul {
+    padding: 10px 0 22px;
+}
+
+.payment ul li {
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.payment .date {
+    background-image: url(../assets/svg/date.svg);
+}
+
+.payment .time {
+    background-image: url(../assets/svg/time.svg);
+}
+
+.payment .ticket {
+    background-image: url(../assets/svg/check.svg);
+}
+
+.payment .basic-ticket,
+.payment .senior-ticket,
+.payment .total-ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment .total-ticket {
+    margin-top: 7px;
+    padding-top: 10px;
+    border-top: 2px solid #710707;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.payment .basic-ticket,
+.payment .senior-ticket {
+    font-size: 22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.payment .basic-ticket .number,
+.payment .senior-ticket .number {
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #030303;
+    font-size: 18px;
+    line-height: 21px;
+    color: #a4a4a3;
+    text-align: center;
+}
+
+.payment .card .card-container {
+    position: relative;
+}
+
+.payment .card .front-side {
+    position: relative;
+    z-index: 2;
+    width: 360px;
+    padding: 15px 20px;
+    background-color: #bcbcbc;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url("../assets/img/Visa.png"), url("../assets/img/Mastercard.png");
+    background-position: 93% 34px, 93% 65px;
+    border-radius: 5px;
+}
+
+.card .form-group label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: #161615;
+}
+
+.card .form-group input {
+    padding-left: 9px;
+    height: 36px;
+    border: 0.5px solid #a4a4a3;
+}
+
+.card .front-side .form-group {
+    width: 215px;
+    margin-bottom: 10px;
+}
+
+.front-side .form-group .card-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group .card-date .input-wr {
+    width: 100px;
+    position: relative;
+}
+
+.card-date .input-wr input {
+    width: 100%;
+    font-size: 12px;
+}
+
+.card-date .input-wr button {
+    position: absolute;
+    right: 0;
+    height: 18px;
+    width: 30px;
+    border: none;
+    background: none;
+    border-left: 0.5px solid #a4a4a3;
+}
+
+.input-wr button:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    left: 50%;
+    border-style: solid;
+    border-width: 0 3px 4px 3px;
+    border-color: transparent transparent #bcbcbc transparent;
+}
+
+.input-wr button.decrease {
+    bottom: 0;
+}
+
+.input-wr button.decrease:after {
+    -webkit-transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
+    top: 1px;
+}
+
+.input-wr button.increase {
+    top: 0;
+}
+
+.input-wr button.increase:after {
+    bottom: 3px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.form-group .w100 {
+    width: 100%;
+}
+
+.payment .card .back-side {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 30px;
+    width: 360px;
+    height: 100%;
+    background-color: #939393;
+    border-radius: 5px;
+}
+
+.card .back-side::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 45px;
+    top: 25px;
+    background-color: #000;
+}
+
+.back-side .form-group {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 75px;
+    right: 20px;
+    bottom: 18px;
+    text-align: center;
+}
+
+.back-side .form-group p {
+    padding: 6px 10px 0 12px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align-last: left;
+    color: #161615;
+}
+
+.payment .btn-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    width: 220px;
+    height: 45px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    background-color: #710707;
 }
