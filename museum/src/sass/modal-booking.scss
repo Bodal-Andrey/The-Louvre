@@ -49,7 +49,7 @@
     width: 28px;
     height: 28px;
     top: 128px;
-    right: 30px;
+    right: 11px;
     background-image: url(../assets/svg/close.svg);
     background-color: #fff;
     border: 0;
@@ -65,11 +65,10 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .general-info {
-    margin-right: 20px;
+    margin-right: 40px;
     -webkit-box-flex: 0;
     -ms-flex: 0 1 400px;
     flex: 0 1 400px;
@@ -204,6 +203,7 @@
     width: 100%;
     height: 100%;
     padding-left: 2px;
+    font-weight: 400;
     border: none;
     outline: none;
 }
@@ -260,7 +260,7 @@
     flex-grow: 1;
     padding-top: 12px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: -0.5px;
 }
 
@@ -268,7 +268,7 @@
     margin-left: -61px;
     padding-top: 11px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .select .select-items {
@@ -345,6 +345,17 @@
     font-size: 18px;
 }
 
+.ticket-type input {
+    width: 36px;
+    margin-right: 2px;
+    padding: 0;
+    padding-left: 13px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+
 .entry-ticket .ticket-type .counts {
     display: flex;
     width: 105px;
@@ -354,17 +365,25 @@
 }
 
 .ticket-type .counts .decrease {
+    padding: 0;
+    padding-left: 18px;
+    padding-right: 15px;
     background-image: url("../assets/svg/minus-white.svg");
     background-color: #030303;
     background-repeat: no-repeat;
     background-position: center center;
+    border: none;
 }
 
 .ticket-type .counts .increase {
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 13px;
     background-image: url("../assets/svg/plus-white.svg");
     background-color: #030303;
     background-repeat: no-repeat;
     background-position: center center;
+    border: none;
 }
 
 .form-container .payment {
@@ -377,17 +396,22 @@
 }
 
 .form-container .payment .title {
+    margin: 0;
     font-size: 32px;
     line-height: 37px;
+    font-weight: 400;
 }
 
 .form-container .payment .subtitle {
+    margin: 0;
     font-size: 22px;
     line-height: 27px;
+    font-weight: 400;
     color: #740c11;
 }
 
 .form-container .payment ul {
+    margin-bottom: -6px;
     padding: 10px 0 22px;
 }
 
@@ -422,7 +446,7 @@
 }
 
 .payment .total-ticket {
-    margin-top: 7px;
+    margin-top: 8px;
     padding-top: 10px;
     border-top: 2px solid #710707;
     font-weight: 500;
@@ -455,11 +479,18 @@
     position: relative;
 }
 
+.payment .card {
+    margin-top: 11px;
+}
+
 .payment .card .front-side {
     position: relative;
     z-index: 2;
     width: 360px;
-    padding: 15px 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
     background-color: #bcbcbc;
     background-repeat: no-repeat, no-repeat;
     background-image: url("../assets/img/Visa.png"), url("../assets/img/Mastercard.png");
@@ -479,9 +510,18 @@
     border: 0.5px solid #a4a4a3;
 }
 
+.card .form-group input[id="card-number"] {
+    width: 217px;
+}
+
+.card .form-group input[id="card-holder-name"] {
+    width: 322px;
+}
+
 .card .front-side .form-group {
     width: 215px;
-    margin-bottom: 10px;
+    margin-top: -7px;
+    margin-bottom: 9px;
 }
 
 .front-side .form-group .card-date {
@@ -573,11 +613,12 @@
     position: absolute;
     width: 75px;
     right: 20px;
-    bottom: 18px;
+    bottom: 16px;
     text-align: center;
 }
 
 .back-side .form-group p {
+    margin: 0;
     padding: 6px 10px 0 12px;
     font-size: 10px;
     line-height: 12px;
@@ -586,18 +627,10 @@
 }
 
 .payment .btn-submit {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
+    margin-top: 56px;
+    margin-left: 248px;
     width: 220px;
     height: 45px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     font-size: 22px;
     color: #fff;
     background-color: #710707;
